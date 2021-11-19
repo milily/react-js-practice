@@ -1,10 +1,14 @@
 import './App.css';
-import AppHeader from './components/headers/AppHeader'
+import Contador from './components/contador';
+import Formulario from './components/Formulario';
 
 function App() {
   return (
-    <div>
-      <AppHeader />
+    <div className="App">
+      <section className="App-content">
+        
+        <Formulario />
+      </section>
     </div>
   );
 }
