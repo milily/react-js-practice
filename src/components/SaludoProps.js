@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react';
 import Avatar from './Avatar'
 
-const Comentario = ({sujeto}) => {
-    console.log(sujeto)
+const Comentario = ({sujeto, nombre}) => {
+    console.log(sujeto, nombre)
     return(
         <Fragment>
             <h2>Comentario</h2>
@@ -12,6 +12,7 @@ const Comentario = ({sujeto}) => {
                 <div className="media-body">
                     <h5 className="mt-0">{sujeto.nombre}</h5>
                     {sujeto.texto}
+                    {nombre}
                 </div>
             </div>
         </Fragment>
