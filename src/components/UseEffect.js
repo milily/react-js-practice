@@ -9,10 +9,9 @@ const UsandoUseEffect = () => {
     },[])
 
     const obtenerDatos = async () => {
-        const data = await fetch('https://api.giphy.com/v1/gifs/search?api_key=jZAJlmxlBdnQgXUmSbC66TbjF4oYOb4k&q=gatitos&limit=25&offset=0&rating=pg&lang=en')
-        const gifs = await data.json()
-        setGifs(gifs.data)
-        console.log(gifs)
+        const response = await fetch('https://api.giphy.com/v1/gifs/search?api_key=jZAJlmxlBdnQgXUmSbC66TbjF4oYOb4k&q=gatitos&limit=25&offset=0&rating=pg&lang=en')
+        const gifsResponse = await response.json()
+        setGifs(gifsResponse.data)
     }
 
     return(
